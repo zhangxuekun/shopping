@@ -19,23 +19,4 @@ public class BlogController {
         return blogProperties.getName()+"——"+blogProperties.getTitle();
     }
 
-    @RequestMapping("/thymeleaf")
-    public String thymeleaf(Model model) {
-        model.addAttribute("name", "thymeleaf");
-        return "/thymeleaf/index";
-    }
-
-    @RequestMapping("/freemarker")
-    public String freemarker(Model model) {
-        model.addAttribute("name", "freemarker");
-        return "/freemarker/index";
-    }
-
-    @RequestMapping("/jsp")
-    public String jsp(Model model) {
-        model.addAttribute("name", "jsp");
-        return "index";
-    }
-
-
 }
